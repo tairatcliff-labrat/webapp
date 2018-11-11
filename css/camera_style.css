@@ -13,6 +13,7 @@ html, body {
   margin-right: auto;
 }
 #camera--display{
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   height: 300px;
