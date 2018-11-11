@@ -5,6 +5,9 @@ html, body {
   width: 100%;
 }
 #camera--container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 600px;
   width: 500px;
   margin-left: auto;
