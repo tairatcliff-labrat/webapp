@@ -5,8 +5,10 @@ html, body {
   width: 100%;
 }
 #camera--container{
-  width: 100%;
-  background-color: lightgrey;
+  height: 700px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #camera--display{
   margin-left: auto;
