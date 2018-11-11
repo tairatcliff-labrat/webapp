@@ -5,17 +5,22 @@ html, body {
   width: 100%;
 }
 #camera-container{
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
+  height: 500px;
+  width: 500px;
 }
 #camera, #camera--view, #camera--sensor, #camera--output {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    position: absolute;
     object-fit: cover;
 }
 #camera--view, #camera--sensor, #camera--output {
