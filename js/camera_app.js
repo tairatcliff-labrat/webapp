@@ -21,7 +21,7 @@ function cameraStart() {
 
 cameraUpload.onclick = function() {
   console.log("uploadPhoto click passed through...");
-  ("#uploadPhoto").click();
+  document.getElementById("uploadPhoto").click();
 }
 
 // Take a picture when cameraTrigger is tapped
