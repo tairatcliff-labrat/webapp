@@ -8,11 +8,14 @@ html, body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 600px;
-  width: 500px;
+  height: 640px;
+  width: 540px;
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
+  border: solid 3px darkgrey;
+  border-radius: 20px;
 }
 #camera--display{
   display: flex;
@@ -67,10 +70,3 @@ html, body {
   margin-right: auto;
   box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
 }
-/*#image--output {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  margin-top: 20px;
-  margin-right: 20px;
-}*/
