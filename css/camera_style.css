@@ -15,6 +15,8 @@ html, body {
   margin-top: 100px;
 }
 #camera--display{
+  display: flex;
+  justify-content: flex-end;
   height: 300px;
   width: 500px;
 }
