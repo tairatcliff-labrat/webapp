@@ -5,9 +5,8 @@ html, body{
   width: 100%;
 }
 #camera, #camera--view, #camera--sensor, #camera--output{
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    text-align: center;
     height: 500px;
     width: 500px;
     object-fit: cover;
