@@ -5,6 +5,7 @@ const cameraView = document.querySelector("#camera--view"),
     cameraOutput = document.querySelector("#camera--output"),
     cameraSensor = document.querySelector("#camera--sensor"),
     cameraTrigger = document.querySelector("#camera--trigger")
+    cameraUpload = document.querySelector("#camera--upload")
 // Access the device camera and stream to cameraView
 function cameraStart() {
     navigator.mediaDevices
@@ -18,11 +19,7 @@ function cameraStart() {
     });
 }
 
-(function onDocReady() {
-    $('#uploadPhoto').onclick(fileUpload);
-    console.log("Doc Ready");
-});
-function fileUpload() {
+cameraUpload.onclick = function() {
   $("#uploadPhoto").click();
   console.log("uploadPhoto click passed through...");
 }
