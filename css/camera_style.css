@@ -4,7 +4,13 @@ html, body {
   height: 100%;
   width: 100%;
 }
-#camera-container{
+#camera--container{
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+#camera--display{
   position: relative;
   display: flex;
   justify-content: center;
@@ -27,7 +33,7 @@ html, body {
     transform: scaleX(-1);
     filter: FlipH;
 }
-#camera--trigger {
+#camera--trigger, #camera--save {
     width: 200px;
     background-color: black;
     color: white;

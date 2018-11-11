@@ -9,19 +9,22 @@
     <link rel="stylesheet" href="css/camera_style.css">
 </head>
 <body>
-  <div class="camera-container">
-    <!-- Camera -->
-    <main id="camera">
-        <!-- Camera sensor -->
-        <canvas id="camera--sensor"></canvas>
-        <!-- Camera view -->
-        <video id="camera--view" autoplay playsinline></video>
-        <!-- Camera output -->
-        <img src="//:0" alt="" id="camera--output">
-        <!-- Camera trigger -->
-        <button id="camera--trigger">Take a picture NOW!</button>
-        <!--input type="file" accept="image/*" capture="camera"-->
-    </main>
+  <div class"camera--container">
+    <div class="camera--display">
+      <!-- Camera -->
+      <main id="camera">
+          <!-- Camera sensor -->
+          <canvas id="camera--sensor"></canvas>
+          <!-- Camera view -->
+          <video id="camera--view" autoplay playsinline></video>
+          <!-- Camera output -->
+          <img src="//:0" alt="" id="camera--output">
+          <!-- Camera trigger -->
+          <button id="camera--trigger">Take a picture</button>
+          <button id="camera--save">Save picture</button>
+          <!--input type="file" accept="image/*" capture="camera"-->
+      </main>
+    </div>
   </div>
     <!-- Reference to your JavaScript file -->
     <script src="js/camera_app.js"></script>
