@@ -17,6 +17,16 @@ function cameraStart() {
         console.error("Oops. Something is broken.", error);
     });
 }
+
+(function onDocReady() {
+    $('#uploadPhoto').onclick(fileUpload);
+    console.log("Doc Ready");
+});
+function fileUpload() {
+  $("#uploadPhoto").click();
+  console.log("uploadPhoto click passed through...");
+}
+
 // Take a picture when cameraTrigger is tapped
 cameraTrigger.onclick = function() {
     cameraSensor.width = cameraView.videoWidth;
@@ -27,7 +37,3 @@ cameraTrigger.onclick = function() {
 };
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
-
-function fileUpload() {
-  $("#uploadPhoto").click();
-}
