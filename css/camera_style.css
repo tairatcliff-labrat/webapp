@@ -14,8 +14,6 @@ html, body {
 }
 #camera--display{
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
   height: 300px;
   width: 500px;
 }
@@ -28,12 +26,12 @@ html, body {
   transform: scaleX(-1);
   filter: FlipH;
 }
-#camera--trigger, #camera--save {
+#camera--trigger {
   width: 200px;
   background-color: black;
   color: white;
   font-size: 16px;
-  border-radius: 30px;
+  border-radius: 20px;
   border: none;
   padding: 15px 20px;
   text-align: center;
