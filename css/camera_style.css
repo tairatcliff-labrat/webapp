@@ -6,10 +6,8 @@ html, body {
 }
 #camera--container{
   display: flex;
-  display: inline-block;
   height: 100%;
   width: 100%;
-  text-align: center;
   justify-content: center;
   align-items: center;
   object-fit: cover;
