@@ -7,7 +7,7 @@ html, body {
 #camera--container{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
   height: 600px;
   width: 500px;
   margin-left: auto;
