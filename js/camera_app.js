@@ -20,8 +20,8 @@ function cameraStart() {
 }
 
 cameraUpload.onclick = function() {
-  $("#uploadPhoto").click();
   console.log("uploadPhoto click passed through...");
+  ("#uploadPhoto").click();
 }
 
 // Take a picture when cameraTrigger is tapped
