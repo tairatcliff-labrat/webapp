@@ -29,6 +29,7 @@ html, body {
 }
 #button--container {
   flex-direction: row;
+  justify-content: center;
 }
 #camera--trigger {
   width: 200px;
