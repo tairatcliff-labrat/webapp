@@ -14,7 +14,6 @@ html, body {
   margin-right: auto;
 }
 #camera--display{
-  display: inline-block;
   height: 300px;
   width: 500px;
 }
@@ -27,8 +26,10 @@ html, body {
   transform: scaleX(-1);
   filter: FlipH;
 }
+#button--container {
+  flex-direction: row;
+}
 #camera--trigger {
-  display: inline-block;
   width: 200px;
   background-color: black;
   color: white;
