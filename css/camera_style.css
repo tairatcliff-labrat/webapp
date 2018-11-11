@@ -35,6 +35,8 @@ html, body {
   width: 100px;
   top: 10px;
   right: 10px;
+  border: solid 3px white;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
 }
 #camera--output.taken {
   height: 100px!important;
