@@ -17,8 +17,8 @@ html, body {
   width: 500px;
 }
 #camera--view, #camera--sensor, #camera--output {
-  height: 500px;
-  width: 500px;
+  position: fixed;
+  max-width: 500px;
   position: fixed;
   object-fit: cover;
   transform: scaleX(-1);
