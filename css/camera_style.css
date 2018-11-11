@@ -6,7 +6,6 @@ html, body {
 }
 #camera--container{
   display: flex;
-  align-items: center;
   justify-content: center;
   height: 600px;
   width: 500px;
