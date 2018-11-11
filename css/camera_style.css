@@ -17,23 +17,24 @@ html, body {
   width: 500px;
 }
 #camera--view, #camera--sensor, #camera--output {
-    object-fit: cover;
-    max-width: 100%;
-    transform: scaleX(-1);
-    filter: FlipH;
+  position: fixed;
+  object-fit: cover;
+  max-width: 100%;
+  transform: scaleX(-1);
+  filter: FlipH;
 }
 #camera--trigger, #camera--save {
-    width: 200px;
-    background-color: black;
-    color: white;
-    font-size: 16px;
-    border-radius: 30px;
-    border: none;
-    padding: 15px 20px;
-    text-align: center;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
-    bottom: 30px;
-    left: calc(50% - 100px);
+  width: 200px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+  bottom: 30px;
+  left: calc(50% - 100px);
 }
 .taken {
     height: 150px!important;
