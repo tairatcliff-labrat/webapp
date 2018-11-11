@@ -17,9 +17,10 @@ html, body {
   width: 500px;
 }
 #camera--view, #camera--sensor, #camera--output {
+  height: 500px;
+  width: 500px;
   position: fixed;
   object-fit: cover;
-  max-width: 100%;
   transform: scaleX(-1);
   filter: FlipH;
 }
