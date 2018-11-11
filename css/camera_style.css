@@ -4,19 +4,19 @@ html, body {
   height: 100%;
   width: 100%;
 }
-#camera--container{
+.camera--container{
   display: flex;
   height: 100%;
   width: 100%;
   justify-content: center;
   align-items: center;
+  background-color: lightgrey;
 }
-#camera--display{
+.camera--display{
   display: inline-block;
   position: absolute;
   height: 500px;
   width: 500px;
-  object-fit: cover;
 }
 #camera, #camera--view, #camera--sensor, #camera--output {
     display: absolute;
