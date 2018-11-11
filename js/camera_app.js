@@ -31,12 +31,8 @@ cameraTrigger.onclick = function() {
     cameraSensor.width = cameraView.videoWidth;
     cameraSensor.height = cameraView.videoHeight;
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
-    cameraOutput.src = cameraSensor.toDataURL("images/webp");
+    cameraOutput.src = cameraSensor.toDataURL("image/webp");
     cameraOutput.classList.add("taken");
-    fs.writeFile('images/mynewfile3.txt', 'userPhoto', function (err) {
-      if (err) throw err;
-      console.log('Saved!');
-    });
 };
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
