@@ -13,10 +13,8 @@ html, body {
     object-fit: cover;
 }
 #camera--view, #camera--sensor, #camera--output {
-    position: absolute;
+    position: relative;
     object-fit: cover;
-}
-#camera--view, #camera--sensor, #camera--output {
     transform: scaleX(-1);
     filter: FlipH;
 }
