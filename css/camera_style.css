@@ -13,7 +13,6 @@ html, body {
 #camera--display{
   margin-left: auto;
   margin-right: auto;
-  height: 500px;
   width: 500px;
 }
 #camera--view, #camera--sensor, #camera--output {
