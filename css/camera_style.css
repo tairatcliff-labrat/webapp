@@ -7,12 +7,12 @@ html, body {
 #camera {
     position: absolute;
     text-align: center;
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 300px;
     object-fit: cover;
 }
 #camera--view, #camera--sensor, #camera--output {
-    position: relative;
+    position: absolute;
     object-fit: cover;
 }
 #camera--view, #camera--sensor, #camera--output {
