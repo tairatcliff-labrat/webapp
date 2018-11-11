@@ -5,7 +5,7 @@ html, body {
   width: 100%;
 }
 .camera--container{
-  display: flex;
+  display: block;
   height: 100%;
   width: 100%;
   justify-content: center;
@@ -20,17 +20,12 @@ html, body {
   height: 500px;
   width: 500px;
 }
-#camera, #camera--view, #camera--sensor, #camera--output {
+#camera--view, #camera--sensor, #camera--output {
     display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-#camera--view, #camera--sensor, #camera--output {
     transform: scaleX(-1);
     filter: FlipH;
 }
