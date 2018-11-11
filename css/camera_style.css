@@ -4,17 +4,16 @@ html, body {
   height: 100%;
   width: 100%;
 }
-#camera {
-    display: flex;
+#camera, #camera--view, #camera--sensor, #camera--output {
     margin-left: auto;
     margin-right: auto;
     height: 500px;
     width: 500px;
     object-fit: cover;
+    position: absolute;
+    object-fit: cover;
 }
 #camera--view, #camera--sensor, #camera--output {
-    position: relative;
-    object-fit: cover;
     transform: scaleX(-1);
     filter: FlipH;
 }
