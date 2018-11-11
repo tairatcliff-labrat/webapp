@@ -71,7 +71,7 @@ html, body {
   margin-right: auto;
   box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
 }
-input[type=camera--trigger]:hover {
+button[type=camera--trigger]:hover {
     background-color: #ce7810;
     color: white;
 }
