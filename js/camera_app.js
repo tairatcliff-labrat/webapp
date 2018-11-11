@@ -20,8 +20,9 @@ function cameraStart() {
 }
 
 cameraUpload.onclick = function() {
-  console.log("uploadPhoto click passed through...");
+  console.log("attemptign to click uploadPhoto hidden button");
   document.getElementById("uploadPhoto").click();
+  console.log("uploadPhoto click passed through...");
 }
 
 // Take a picture when cameraTrigger is tapped
