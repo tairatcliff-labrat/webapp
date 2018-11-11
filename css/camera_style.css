@@ -21,8 +21,7 @@ html, body {
   width: 500px;
 }
 #camera--view, #camera--sensor, #camera--output {
-    display: inline-block;
-    position: relative;
+    position: fixed;
     height: 100%;
     width: 100%;
     object-fit: cover;
