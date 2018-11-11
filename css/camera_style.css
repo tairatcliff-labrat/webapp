@@ -9,6 +9,8 @@ html, body {
   height: 100%;
   width: 100%;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   /*align-items: center;*/
   background-color: lightgrey;
 }
@@ -22,8 +24,6 @@ html, body {
 }
 #camera--view, #camera--sensor, #camera--output {
     position: absolute;
-    height: 100%;
-    width: 100%;
     object-fit: cover;
     transform: scaleX(-1);
     filter: FlipH;
