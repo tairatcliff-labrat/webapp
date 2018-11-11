@@ -1,21 +1,28 @@
-html, body{
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
 }
-#camera, #camera--view, #camera--sensor, #camera--output{
+#camera {
     position: absolute;
     text-align: center;
     height: 500px;
     width: 500px;
     object-fit: cover;
 }
-#camera--view, #camera--sensor, #camera--output{
+#camera--view, #camera--sensor, #camera--output {
+    position: absolute;
+    text-align: center;
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
+#camera--view, #camera--sensor, #camera--output {
     transform: scaleX(-1);
     filter: FlipH;
 }
-#camera--trigger{
+#camera--trigger {
     width: 200px;
     background-color: black;
     color: white;
@@ -29,7 +36,7 @@ html, body{
     bottom: 30px;
     left: calc(50% - 100px);
 }
-.taken{
+.taken {
     height: 150px!important;
     width: 150px!important;
     transition: all 0.5s ease-in;
