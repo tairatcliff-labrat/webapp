@@ -14,12 +14,12 @@ html, body {
 }
 .camera--display{
   display: inline-block;
-  position: absolute;
+  position: relative;
   height: 500px;
   width: 500px;
 }
 #camera, #camera--view, #camera--sensor, #camera--output {
-    display: absolute;
+    display: inline-block;
     vertical-align: middle;
     text-align: center;
     margin-left: auto;
