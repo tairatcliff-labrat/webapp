@@ -1,11 +1,13 @@
 // Set constraints for the video stream
 var constraints = { video: { facingMode: "user" }, audio: false };
+
 // Define constants
 const cameraView = document.querySelector("#camera--view"),
     cameraOutput = document.querySelector("#camera--output"),
     cameraSensor = document.querySelector("#camera--sensor"),
     cameraTrigger = document.querySelector("#camera--trigger")
     cameraUpload = document.querySelector("#camera--upload")
+
 // Access the device camera and stream to cameraView
 function cameraStart() {
     navigator.mediaDevices
@@ -20,9 +22,7 @@ function cameraStart() {
 }
 
 cameraUpload.onclick = function() {
-  console.log("attemptign to click uploadPhoto hidden button");
-  document.getElementById("uploadPhoto").click();
-  console.log("uploadPhoto click passed through...");
+  document.getElementById("#uploadPhoto").click();
 }
 
 // Take a picture when cameraTrigger is tapped
