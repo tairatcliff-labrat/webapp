@@ -59,7 +59,7 @@ html, body {
   margin-left: 5px;
   margin-right: 5px;
 }
-#camera--trigger, #camera--upload, #camera--test {
+#camera--trigger, #camera--upload {
   width: 200px;
   background-color: #F28E16;
   color: white;
@@ -74,7 +74,7 @@ html, body {
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
-#camera--trigger:hover, #camera--upload:hover, #camera--test:hover {
+#camera--trigger:hover, #camera--upload:hover {
     background-color: #ce7810;
     color: white;
 }
