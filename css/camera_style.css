@@ -12,10 +12,7 @@ html, body {
     object-fit: cover;
 }
 #camera--view, #camera--sensor, #camera--output {
-    position: absolute;
-    text-align: center;
-    height: 500px;
-    width: 500px;
+    position: relative;
     object-fit: cover;
 }
 #camera--view, #camera--sensor, #camera--output {
