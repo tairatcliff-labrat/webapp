@@ -4,7 +4,7 @@ html, body {
   height: 100%;
   width: 100%;
 }
-.camera--container{
+#camera--container{
   display: block;
   height: 100%;
   width: 100%;
@@ -12,7 +12,7 @@ html, body {
   /*align-items: center;*/
   background-color: lightgrey;
 }
-.camera--display{
+#camera--display{
   position: absolute;
   margin-left: auto;
   margin-right: auto;
