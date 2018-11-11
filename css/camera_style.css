@@ -8,8 +8,8 @@ html, body{
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    height: 60%;
-    width: 50%;
+    height: 500px;
+    width: 500px;
     object-fit: cover;
 }
 #camera--view, #camera--sensor, #camera--output{
@@ -31,8 +31,8 @@ html, body{
     left: calc(50% - 100px);
 }
 .taken{
-    height: 100px!important;
-    width: 100px!important;
+    height: 150px!important;
+    width: 150px!important;
     transition: all 0.5s ease-in;
     border: solid 3px white;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
