@@ -33,6 +33,13 @@ cameraTrigger.onclick = function() {
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
     cameraOutput.classList.add("taken");
+
+    // Capture the uploaded photo as a high quality jpeg
+    userPhoto = cameraSensor.toDataURL('image/jpeg', 1.0);
+    fs.writeFile('userPhoto.jpeg', userPhoto, function (err) {
+      if (err) throw err;
+      console.log('Saved Photo');
+    });
 };
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
