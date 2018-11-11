@@ -13,7 +13,7 @@ html, body {
   background-color: lightgrey;
 }
 .camera--display{
-  position: fixed;
+  position: absolute;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -21,7 +21,7 @@ html, body {
   width: 500px;
 }
 #camera--view, #camera--sensor, #camera--output {
-    position: fixed;
+    position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
