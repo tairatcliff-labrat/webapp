@@ -4,6 +4,11 @@ html, body {
   height: 100%;
   width: 100%;
 }
+#camera-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
 #camera, #camera--view, #camera--sensor, #camera--output {
     margin-left: auto;
     margin-right: auto;
