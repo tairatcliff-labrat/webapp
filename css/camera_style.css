@@ -30,6 +30,7 @@ html, body {
   filter: FlipH;
 }
 #camera--output {
+  position: relative;
   height: 100px;
   width: 100px;
   top: 10px;
