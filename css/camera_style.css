@@ -13,6 +13,8 @@ html, body {
 }
 #camera--view, #camera--sensor, #camera--output {
     position: absolute;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 #camera--view, #camera--sensor, #camera--output {
