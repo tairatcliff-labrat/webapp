@@ -28,6 +28,6 @@ cameraTrigger.onclick = function() {
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
 
-function uploadPhoto() {
+function fileUpload() {
   $("#uploadPhoto").click();
 }
