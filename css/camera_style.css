@@ -5,10 +5,11 @@ html, body {
   width: 100%;
 }
 #camera {
-    position: absolute;
-    text-align: center;
-    height: 300px;
-    width: 300px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 500px;
     object-fit: cover;
 }
 #camera--view, #camera--sensor, #camera--output {
