@@ -5,7 +5,7 @@ html, body {
   width: 100%;
 }
 #camera--container{
-  height: 700px;
+  height: 600px;
   width: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -17,7 +17,7 @@ html, body {
   width: 500px;
 }
 #camera--view, #camera--sensor, #camera--output {
-    position: absolute;
+    position: relative;
     object-fit: cover;
     transform: scaleX(-1);
     filter: FlipH;
