@@ -1,5 +1,6 @@
 // Set constraints for the video stream
 var constraints = { video: { facingMode: "user" }, audio: false };
+var fs = require('fs');
 
 // Define constants
 const cameraView = document.querySelector("#camera--view"),
@@ -32,6 +33,10 @@ cameraTrigger.onclick = function() {
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
     cameraOutput.src = cameraSensor.toDataURL("images/webp");
     cameraOutput.classList.add("taken");
+    fs.writeFile('images/mynewfile3.txt', 'userPhoto', function (err) {
+      if (err) throw err;
+      console.log('Saved!');
+    });
 };
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
