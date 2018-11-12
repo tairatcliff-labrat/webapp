@@ -25,11 +25,18 @@ html, body {
   height: 300px;
   width: 500px;
 }
+#camera--sensor {
+  position: relative;
+  z-index: 0
+}
+#camera--view {
+  position: relative;
+  z-index: 1
+}
 #camera--view, #camera--sensor, #camera--output {
-  position: fixed;
+  position: relative;
   max-height: 300px;
   max-width: 500px;
-  position: fixed;
   object-fit: cover;
   transform: scaleX(-1);
   filter: FlipH;
