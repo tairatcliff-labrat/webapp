@@ -35,8 +35,7 @@ cameraTrigger.onclick = function() {
 
     // Capture the uploaded photo as a high quality jpeg
     userPhoto = cameraSensor.toDataURL('image/jpeg', 1.0);
-    
-    });
 };
+
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
