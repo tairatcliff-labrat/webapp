@@ -1,6 +1,5 @@
 // Set constraints for the video stream
 var constraints = { video: { facingMode: "user" }, audio: false };
-var fs = require('fs');
 
 // Define constants
 const cameraView = document.querySelector("#camera--view"),
@@ -36,9 +35,7 @@ cameraTrigger.onclick = function() {
 
     // Capture the uploaded photo as a high quality jpeg
     userPhoto = cameraSensor.toDataURL('image/jpeg', 1.0);
-    fs.writeFile('userPhoto.jpeg', userPhoto, function (err) {
-      if (err) throw err;
-      console.log('Saved Photo');
+    
     });
 };
 // Start the video stream when the window loads
