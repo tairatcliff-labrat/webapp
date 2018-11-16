@@ -22,7 +22,7 @@ html, body {
 #camera--display {
   display: flex;
   justify-content: center;
-  height: auto;
+  height: 400px;
   width: 550px;
 }
 #camera--sensor {
