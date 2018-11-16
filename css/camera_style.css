@@ -20,7 +20,7 @@ html, body {
   border-radius: 20px;
 }
 #camera--display {
-  display: inline-block;
+  display: flex;
   justify-content: center;
   height: auto;
   width: 550px;
@@ -32,8 +32,8 @@ html, body {
   z-index: 1
 }
 #camera--view, #camera--sensor, #camera--output {
-  display: flex;
-  position: absolute;
+  /*display: flex;*/
+  position: relative;
   max-height: 300px;
   max-width: 500px;
   object-fit: cover;
@@ -57,7 +57,7 @@ html, body {
   z-index: 2;
 }
 #button--container {
-  display: inline-block;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   margin-left: auto;
