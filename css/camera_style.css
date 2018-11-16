@@ -32,7 +32,7 @@ html, body {
   z-index: 1
 }
 #camera--view, #camera--sensor, #camera--output {
-  display: fixed;
+  display: flex;
   position: absolute;
   max-height: 300px;
   max-width: 500px;
