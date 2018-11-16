@@ -71,6 +71,10 @@
                       personData.push("Eyeglasses: " + details.Eyeglasses.Value );
                       personData.push("Gender: " + details.Gender.Value );
                       personData.push("Smile: " + details.Smile.Value );
+                      personData.push("Mustache: " + details.Mustache.Value );
+                      personData.push("EyesOpen: " + details.EyesOpen.Value );
+                      personData.push("MouthOpen: " + details.MouthOpen.Value );
+                      personData.push("Emotions: " + details.Emotions.Type );
                       displayDetails(personData);
                     });
                 };
@@ -115,7 +119,7 @@
 
         if(personData){
           $("#details").html("");
-          $("#details").append("<div style='height:150px; overflow: auto' id='personDetails' class='detailsList'><div class='listHeader'>Person Details:</div></div>");
+          $("#details").append("<div style='height:150px; overflow: auto' id='personDetails' class='detailsList'><div class='listHeader'>Image Analysis:</div></div>");
           displayAnimated($("#personDetails"), personData, 0, 0);
         }
         else{
@@ -150,7 +154,7 @@
         var availableHosts = res["AvailableHosts"].map(function(item) {
           return { "id": item["RekognitionId"], "label": item["FullName"] }
         })
-        $( "#hostName" ).autocomplete({
+        $("#hostName").autocomplete({
           source: availableHosts,
           select: function(event, ui) {
             $('#hostId').val(ui.item.id);
