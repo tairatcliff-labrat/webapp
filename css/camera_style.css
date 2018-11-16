@@ -20,9 +20,9 @@ html, body {
   border-radius: 20px;
 }
 #camera--display {
-  display: fixed;
+  display: inline-block;
   /*justify-content: flex-end;*/
-  height: 600px;
+  height: auto;
   width: 550px;
 }
 #camera--sensor {
@@ -32,8 +32,8 @@ html, body {
   z-index: 1
 }
 #camera--view, #camera--sensor, #camera--output {
-  display: fixed;
-  position: fixed;
+  display: inline-block;
+  position: absolute;
   max-height: 300px;
   max-width: 500px;
   object-fit: cover;
