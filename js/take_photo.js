@@ -48,8 +48,8 @@
                     // Call register API
                     var params = {
                       ThingName: ThingName,
-                      FullName: getVisitor(),
-                      Host: getHost(),
+                      FullName: "Tai Ratcliff", //getVisitor(),
+                      Host: "Julian Bright", //getHost(),
                       Image: { Bytes: dataUrl.split("data:image/jpeg;base64,")[1] },
                     }
                     register(params, function(err) {
