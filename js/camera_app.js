@@ -5,8 +5,8 @@ var constraints = { video: { facingMode: "user" }, audio: false };
 const cameraView = document.querySelector("#camera--view"),
     cameraOutput = document.querySelector("#camera--output"),
     cameraSensor = document.querySelector("#camera--sensor"),
-    cameraTrigger = document.querySelector("#camera--trigger")
-    //cameraUpload = document.querySelector("#camera--upload")
+    cameraTrigger = document.querySelector("#camera--trigger"),
+    cameraUpload = document.querySelector("#camera--upload")
 
 // Access the device camera and stream to cameraView
 function cameraStart() {
@@ -21,9 +21,9 @@ function cameraStart() {
     });
 }
 
-//cameraUpload.onclick = function() {
-  //document.getElementById("inpObject").click();
-//}
+cameraUpload.onclick = function() {
+  document.getElementById("inpObject").click();
+}
 
 // Take a picture when cameraTrigger is tapped
 cameraTrigger.onclick = function() {

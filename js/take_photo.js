@@ -1,9 +1,5 @@
     var baseUrl = "https://ygjruq551j.execute-api.ap-southeast-2.amazonaws.com/Prod"
 
-    $("#camera--upload").on("click", function() {
-      document.getElementById("inpObject").click();
-    }
-    
     function readURL(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
