@@ -1,0 +1,116 @@
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .form{
+      width: 360px;
+      -height: 245px;
+      background: #edeff1;
+      margin: 0px auto;
+      padding-top: 20px;
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+    }
+
+    input[type="text"]{
+      display: block;
+      width: 270px;
+      height: 35px;
+      margin: 15px auto;
+      background: #fff;
+      border: 0px;
+      padding: 5px;
+      font-size: 16px;
+      border: 2px solid #fff;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    }
+
+    input[type="text"]:focus{
+      border: 2px solid #1abc9d
+    }
+
+    label.cameraButton {
+        display: inline-block;
+        width: 260px;
+        height: 25px;
+        margin: 15px 0px 35px 0px;
+        text-align: center;
+        font-size: x-large;
+
+        /* Styles to make it look like a button */
+        padding: 0.5em;
+        border: 2px solid #666;
+        border-color: #EEE #CCC #CCC #EEE;
+        background-color: #DDD;
+        border-radius: 10px;
+    }
+
+    /* Look like a clicked/depressed button */
+    label.cameraButton:active {
+        border-color: #CCC #EEE #EEE #CCC;
+    }
+
+    /* This is the part that actually hides the 'Choose file' text box for camera inputs */
+    label.cameraButton input[accept*="camera"] {
+        display: none;
+    }
+
+    div.details {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .photo{
+        max-height: 150px;
+        border-radius: 15px;
+        border: 2px solid #ddd;
+    }
+
+    /* Need to add extra padding when rotating from portait to landscape */
+    .ROTATE_90 {
+      transform: rotate(90deg);
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .ROTATE_270 {
+      transform: rotate(270deg);
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .ROTATE_180 {
+      transform: rotate(180deg);
+    }
+
+    .detailsList{
+        font-family: monospace;
+
+    }
+    .listHeader{
+        font-weight: bold;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    /*. spinner */
+    @keyframes spinner {
+      to {transform: rotate(360deg);}
+    }
+
+    .spinner:before {
+      content: '';
+      box-sizing: border-box;
+      position: absolute;
+      top: 30%;
+      left: 45%;
+      width: 70px;
+      height: 70px;
+      margin-top: -10px;
+      margin-left: -10px;
+      border-radius: 50%;
+      border: 4px solid transparent;
+      border-top-color: #2369a5;
+      border-bottom-color: #2369a5;
+      animation: spinner .8s ease infinite;
+    }
