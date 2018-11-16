@@ -22,7 +22,7 @@ function cameraStart() {
 }
 
 cameraUpload.onclick = function() {
-  document.getElementById("#inpObject").click();
+  document.getElementById("inpObject").click();
 }
 
 // Take a picture when cameraTrigger is tapped
