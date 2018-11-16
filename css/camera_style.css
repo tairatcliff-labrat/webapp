@@ -33,7 +33,7 @@ html, body {
 }
 #camera--view, #camera--sensor, #camera--output {
   display: fixed;
-  /*position: absolute;*/
+  position: fixed;
   max-height: 300px;
   max-width: 500px;
   object-fit: cover;
