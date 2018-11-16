@@ -87,3 +87,9 @@ html, body {
     background-color: #ce7810;
     color: white;
 }
+
+#hidden_button {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+}
