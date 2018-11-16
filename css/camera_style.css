@@ -44,7 +44,7 @@ html, body {
 }
 #camera--output.taken {
   display: inline-block;
-  position: absolute;
+  position: relative;
   height: 100px;
   width: 100px;
   top: 10px;
