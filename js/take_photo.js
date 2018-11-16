@@ -119,7 +119,7 @@
 
         if(personData){
           $("#details").html("");
-          $("#details").append("<div style='height:150px; overflow: auto' id='personDetails' class='detailsList'><div class='listHeader'>Image Analysis:</div></div>");
+          $("#details").append("<div style='height:200px; overflow: auto' id='personDetails' class='detailsList'><div class='listHeader'>Image Analysis:</div></div>");
           displayAnimated($("#personDetails"), personData, 0, 0);
         }
         else{
