@@ -169,7 +169,7 @@ function displayAnimated(divObj, stringList, currWordIndex, currIndex){
 }
 
 $("document").ready(function() {
-  
+
   getAvailableHosts(function(err) {
     console.log(err, err.stack);
   }, function(res) {
@@ -212,6 +212,7 @@ cameraTrigger.onclick = function() {
 
     // Capture the uploaded photo as a high quality jpeg
     userPhoto = cameraSensor.toDataURL('image/jpeg', 1.0);
+    readURL(userPhoto);
 };
 
 // Start the video stream when the window loads
