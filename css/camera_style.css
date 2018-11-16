@@ -20,7 +20,7 @@ html, body {
   border-radius: 20px;
 }
 #camera--display {
-  display: inline-block;
+  display: fixed;
   /*justify-content: flex-end;*/
   height: auto;
   width: 550px;
