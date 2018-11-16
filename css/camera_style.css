@@ -93,9 +93,3 @@ html, body {
   overflow: hidden;
   height: 0;
 }
-
-#picture {
-  position:fixed;
-  margin-top: 100px;
-  margin-left: 100px;
-}
