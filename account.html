@@ -24,10 +24,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://js.arcgis.com/4.3/esri/css/main.css">
 	<link rel="stylesheet" href="css/ride.css">
-	<link rel="stylesheet" href="css/take_photo.css">
-	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/camera_style.css">
 
 </head>
 
@@ -37,7 +34,7 @@
 	    <!-- Brand and toggle get grouped for better mobile display -->
 
 	    <div class="navbar-header">
-	      <a href="#page-top"><img src="images/header-logo.png" title="Header Logo" height="50px"></a>
+	      <a href="#page-top"><img src="images/header-logo.png" title="DHS Logo" height="50px"></a>
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 	    </div>
 
@@ -97,30 +94,6 @@
     <!--input type="file" id="uploadPhoto" name="uploadPhoto" accept="image/*"/-->
   </div>
 
-	<div class="form">
-		<!--h2>Virtual Concierge <i class="em em-selfie"></i></h2>
-		<input type="text" id="visitorName" class="name" placeholder="Enter your name" />
-		<input type="text" id="hostName" class="name" placeholder="Select your host" />
-		<input type="hidden" id="hostId" /-->
-
-		<label class="cameraButton">
-			<span><i class="fa fa-camera"></i>&nbsp;&nbsp;Take a Photo</span>
-			<input hidden type="file" id="inpObject" accept="image/*" capture>
-		</label>
-	</div>
-
-	<div id="picture" >
-		<br />
-			<img id="imgPhoto" src="#" class="photo" hidden  />
-		<br/>
-	</div>
-
-	<div id="analyzing" hidden ><div class="spinner"></div></div>
-	<div id="details"  class="details" hidden></div>
-
-
-	</center>
-
 	<script src="js/vendor/jquery-3.1.0.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/vendor/aws-cognito-sdk.min.js"></script>
@@ -131,9 +104,6 @@
 	<script src="js/esri-map.js"></script>
 	<script src="js/ride.js"></script>
 	<script src="js/camera_app.js"></script>
-	<script src="js/take_photo.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 </body>
 </html>
