@@ -162,6 +162,10 @@
         });
       });
 
+      $("#camera--upload").on("click", function() {
+        document.getElementById("inpObject").click();
+      }
+
       $("#inpObject").on("click", function () {
         if (getVisitor() == '' || getHost() == null) {
           alert('Please provide your name and select host')
