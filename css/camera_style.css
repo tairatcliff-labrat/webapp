@@ -33,7 +33,7 @@ html, body {
 }
 #camera--view, #camera--sensor, #camera--output {
   /*display: flex;*/
-  position: relative;
+  position: absolute;
   max-height: 300px;
   max-width: 500px;
   object-fit: cover;
