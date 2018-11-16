@@ -91,15 +91,6 @@
 	<!-- Camera output -->
 	<img src="//:0" alt="" id="camera--output">
 
-	<center>
-	<div id="picture" >
-		<br />
-			<img id="imgPhoto" src="#" class="photo" hidden  />
-		<br/>
-	</div>
-	<div id="analyzing" hidden ><div class="spinner"></div></div>
-	<div id="details"  class="details" hidden></div>
-	<center/>
 
   <div style="height:0px;overflow:hidden">
     <form method="POST" enctype="multipart/form-data">
@@ -109,6 +100,16 @@
     <!--input type="file" id="uploadPhoto" name="uploadPhoto" accept="image/*"/-->
   </div>
 
+	<center>
+	<div id="picture" >
+		<br />
+			<img id="imgPhoto" src="#" class="photo" hidden  />
+		<br/>
+	</div>
+	<div id="analyzing" hidden ><div class="spinner"></div></div>
+	<div id="details"  class="details" hidden></div>
+	<center/>
+	
 	<script src="js/vendor/jquery-3.1.0.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/vendor/aws-cognito-sdk.min.js"></script>
