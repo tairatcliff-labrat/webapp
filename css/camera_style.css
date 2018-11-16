@@ -9,7 +9,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  height: auto;
+  height: 500px;
   width: 600px;
   padding: 20px;
   margin-left: auto;
