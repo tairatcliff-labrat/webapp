@@ -45,6 +45,7 @@ html, body {
 #camera--output.taken {
   display: flex;
   position: relative;
+  margin-top: 50px;
   top: 10px;
   right: 10px;
   height: 150px!important;
