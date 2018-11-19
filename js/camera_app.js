@@ -125,6 +125,7 @@ function uploadNewImage(input) {
             img.src = cameraSensor.toDataURL('image/jpeg', 0.8);
 
             img.onload = function(i) {
+                console.log("Image OnLoad")
                 $('#picture').fadeTo( "fast" , 0.5)
 
                 var dataUrl = img.src
