@@ -109,14 +109,6 @@ function readURL(input) {
 
 
 function uploadNewImage(input) {
-    console.log("Upload New Image");
-    /*if (input.files && input.files[0]) {
-        console.log("input files exist!")
-
-        var reader = new FileReader();
-
-        reader.onloadend = function (e) {*/
-            console.log("Analyzing")
             $('#analyzing').show();
             $("#details").hide();
             $("#details").empty();
@@ -125,7 +117,6 @@ function uploadNewImage(input) {
             img.src = cameraSensor.toDataURL('image/jpeg', 0.8);
 
             img.onload = function(i) {
-                console.log("Image OnLoad")
                 $('#picture').fadeTo( "fast" , 0.5)
 
                 var dataUrl = img.src
@@ -166,11 +157,6 @@ function uploadNewImage(input) {
                   displayDetails(personData);
                 });
             };
-
-        //};
-
-        //reader.readAsDataURL(input.files[0]);
-      //}
   }
 
 
@@ -280,7 +266,7 @@ cameraTrigger.onclick = function() {
     cameraSensor.width = cameraView.videoWidth;
     cameraSensor.height = cameraView.videoHeight;
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
-    cameraOutput.src = cameraSensor.toDataURL("image/webp");
+    //cameraOutput.src = cameraSensor.toDataURL("image/webp");
     //cameraOutput.classList.add("taken");
     uploadNewImage(this);
 
