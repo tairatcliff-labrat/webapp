@@ -117,7 +117,13 @@ function uploadNewImage(input) {
             $("#details").hide();
             $("#details").empty();
 
-            var dataUrl = cameraSensor.toDataURL("image/jpeg", 0.8);
+            var img = document.createElement("img");
+            img.src = cameraSensor.toDataURL('image/jpeg', 1.0);
+
+            img.onload = function(i) {
+                $('#picture').fadeTo( "fast" , 0.5)
+
+                var dataUrl = img.src
 
                 // TODO: Optionally pull this from query string
                 ThingName = "deeplens_zz8BbGbNSVuHCsyqtWOM4Q";
@@ -269,7 +275,7 @@ cameraTrigger.onclick = function() {
     cameraSensor.height = cameraView.videoHeight;
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
-    cameraOutput.classList.add("taken");
+    //cameraOutput.classList.add("taken");
     uploadNewImage(this);
 
     // Capture the uploaded photo as a high quality jpeg
