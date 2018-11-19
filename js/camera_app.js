@@ -107,6 +107,62 @@ function readURL(input) {
     }
 }
 
+
+function uploadNewImage(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onloadend = function (e) {
+            $('#analyzing').show();
+            $("#details").hide();
+            $("#details").empty();
+
+            var dataUrl = cameraSensor.toDataURL("image/jpeg", 0.8);
+
+                // TODO: Optionally pull this from query string
+                ThingName = "deeplens_zz8BbGbNSVuHCsyqtWOM4Q";
+
+                // Call register API
+                var params = {
+                  ThingName: ThingName,
+                  FullName: getVisitor(),
+                  Host: "Julian Bright", //getHost(),
+                  Image: { Bytes: dataUrl.split("data:image/jpeg;base64,")[1] },
+                }
+                register(params, function(err) {
+                  $('#imgPhoto').attr('src', dataUrl);
+                  $('#imgPhoto').attr('hidden', false);
+                  console.log(err, err.stack);
+                  displayDetails(false);
+                }, function(data) {
+                  // Rotate image to reflect orientation
+                  var rotate = data['OrientationCorrection']
+                  $('#imgPhoto').attr('src', dataUrl);
+                  $('#imgPhoto').attr('class', 'photo ' + rotate);
+                  $('#imgPhoto').attr('hidden', false);
+                  // Output details
+                  var details = data.FaceDetails[0];
+                  var personData = [];
+                  personData.push("Age Range: " + details.AgeRange.Low + " - " + details.AgeRange.High );
+                  personData.push("Beard: " + details.Beard.Value );
+                  personData.push("Eyeglasses: " + details.Eyeglasses.Value );
+                  personData.push("Gender: " + details.Gender.Value );
+                  personData.push("Smile: " + details.Smile.Value );
+                  personData.push("Mustache: " + details.Mustache.Value );
+                  personData.push("EyesOpen: " + details.EyesOpen.Value );
+                  personData.push("MouthOpen: " + details.MouthOpen.Value );
+                  personData.push("Emotions: " + details.Emotions.Type );
+                  displayDetails(personData);
+                });
+            };
+
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+
 function register(params, failure, success) {
   var url = baseUrl + "/register"
   $.ajax({
