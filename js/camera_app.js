@@ -159,7 +159,6 @@ function uploadNewImage(input) {
         };
 
         reader.readAsDataURL(input.files[0]);
-    }
 }
 
 
@@ -259,7 +258,7 @@ $("document").ready(function() {
 
 });
 
-
+// When the Upload button is clicked, redirect to the hidden file upload button
 cameraUpload.onclick = function() {
   document.getElementById("inpObject").click();
 }
@@ -272,7 +271,7 @@ cameraTrigger.onclick = function() {
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
     cameraOutput.classList.add("taken");
     uploadNewImage(this);
-        
+
     // Capture the uploaded photo as a high quality jpeg
     /*var image = new Image();
     image.src = cameraSensor.toDataURL('image/jpeg', 1.0);
