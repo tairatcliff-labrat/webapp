@@ -79,6 +79,7 @@
       <!-- Camera view -->
       <video id="camera--view" autoplay playsinline></video>
       </div>
+			<input type="text" id="preferredName" placeholder="Enter your preferred name.." pattern=".*" required>
     <div id="button--container">
       <!-- Camera trigger -->
       <div id="button"><button id="camera--trigger">Take a new picture</button></div>
@@ -86,6 +87,7 @@
     </div>
 		<div id="hidden_button">
 			<input type="file" id="inpObject" accept="image/*" capture>
+			<input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
 		</div>
   </div>
 	<!-- Camera output -->
