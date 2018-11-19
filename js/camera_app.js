@@ -165,7 +165,8 @@ function uploadNewImage(input) {
         };
 
         reader.readAsDataURL(input.files[0]);
-}
+      }
+  }
 
 
 function register(params, failure, success) {
