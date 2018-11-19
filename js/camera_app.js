@@ -70,7 +70,7 @@ function readURL(input) {
                 // Call register API
                 var params = {
                   ThingName: ThingName,
-                  FullName: "Tai Ratcliff", //getVisitor(),
+                  FullName: getVisitor(),
                   Host: "Julian Bright", //getHost(),
                   Image: { Bytes: dataUrl.split("data:image/jpeg;base64,")[1] },
                 }
@@ -124,7 +124,7 @@ function getAvailableHosts(failure, success) {
 }
 
 function getVisitor() {
-  return $("#visitorName").val()
+  return $("#preferredName").val()
 }
 
 function getHost() {
@@ -186,7 +186,13 @@ $("document").ready(function() {
 
   $("#inpObject").on("click", function () {
     if (getVisitor() == '' || getHost() == null) {
-      alert('Please provide your name and select host')
+      alert('Please provide your preferred name')
+      return false;
+    }
+  });
+  $("#camera--trigger").on("click", function () {
+    if (getVisitor() == '' || getHost() == null) {
+      alert('Please provide your preferred name')
       return false;
     }
   });
@@ -211,9 +217,12 @@ cameraTrigger.onclick = function() {
     cameraOutput.classList.add("taken");
 
     // Capture the uploaded photo as a high quality jpeg
-    userPhoto = cameraSensor.toDataURL('image/jpeg', 1.0);
-    readURL(userPhoto);
+    var image = new Image();
+    image.src = cameraSensor.toDataURL('image/jpeg', 1.0);
+    image.crossOrigin = "anonymous";
+    readURL(image);
 };
+
 
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
