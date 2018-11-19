@@ -110,8 +110,9 @@ function readURL(input) {
 
 function uploadNewImage(input) {
     console.log("Upload New Image");
-    if (input.files && input.files[0]) {
+    /*if (input.files && input.files[0]) {
         console.log("input files exist!")
+        */
         var reader = new FileReader();
 
         reader.onloadend = function (e) {
@@ -167,7 +168,7 @@ function uploadNewImage(input) {
         };
 
         reader.readAsDataURL(input.files[0]);
-      }
+      //}
   }
 
 
