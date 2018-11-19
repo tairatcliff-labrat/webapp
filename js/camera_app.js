@@ -116,6 +116,7 @@ function uploadNewImage(input) {
         var reader = new FileReader();
 
         reader.onloadend = function (e) {
+            console.log("Reader OnLoadEnd")
             $('#analyzing').show();
             $("#details").hide();
             $("#details").empty();
@@ -167,7 +168,7 @@ function uploadNewImage(input) {
 
         };
 
-        reader.readAsDataURL(input.files[0]);
+        //reader.readAsDataURL(input.files[0]);
       //}
   }
 
