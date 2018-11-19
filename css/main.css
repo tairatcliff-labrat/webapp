@@ -113,7 +113,7 @@ form {
   margin : 0 auto;
 }
 
-input[type=text], input[type=tel], input[type=password], input[type=email] {
+input[type=text], input[type=tel], input[type=password], input[type=email], input[type=preferredName] {
     width: 100%;
     padding: 10px 0;
     margin: 10px 0 10px;
