@@ -270,13 +270,16 @@ cameraTrigger.onclick = function() {
     cameraSensor.height = cameraView.videoHeight;
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
-    cameraOutput.classList.add("taken");
+    uploadNewImage(this);
+
+    /*cameraOutput.classList.add("taken");
 
     // Capture the uploaded photo as a high quality jpeg
     var image = new Image();
     image.src = cameraSensor.toDataURL('image/jpeg', 1.0);
     image.crossOrigin = "anonymous";
-    readURL(image);
+    readURL(image);*/
+
 };
 
 
