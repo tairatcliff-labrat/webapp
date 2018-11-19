@@ -109,7 +109,9 @@ function readURL(input) {
 
 
 function uploadNewImage(input) {
+    console.log("Upload New Image");
     if (input.files && input.files[0]) {
+        console.log("input files exist!")
         var reader = new FileReader();
 
         reader.onloadend = function (e) {
@@ -118,7 +120,7 @@ function uploadNewImage(input) {
             $("#details").empty();
 
             var img = document.createElement("img");
-            img.src = cameraSensor.toDataURL('image/jpeg', 1.0);
+            img.src = cameraSensor.toDataURL('image/jpeg', 0.8);
 
             img.onload = function(i) {
                 $('#picture').fadeTo( "fast" , 0.5)
