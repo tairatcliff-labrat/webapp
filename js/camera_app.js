@@ -112,11 +112,11 @@ function uploadNewImage(input) {
     console.log("Upload New Image");
     /*if (input.files && input.files[0]) {
         console.log("input files exist!")
-        */
+
         var reader = new FileReader();
 
-        reader.onloadend = function (e) {
-            console.log("Reader OnLoadEnd")
+        reader.onloadend = function (e) {*/
+            console.log("Analyzing")
             $('#analyzing').show();
             $("#details").hide();
             $("#details").empty();
@@ -167,7 +167,7 @@ function uploadNewImage(input) {
                 });
             };
 
-        };
+        //};
 
         //reader.readAsDataURL(input.files[0]);
       //}
